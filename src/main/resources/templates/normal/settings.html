@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" 
+				th:replace="normal/base::Layout(~{::section})">
+	<head>
+		<meta charset="UTF-8" />
+		<title>This is settings page</title>
+	</head>
+	<body>
+		<section>
+			
+			<div class="container mt-3">
+				<div class="row">
+					<div class="col-md-12">
+						
+						<div class="card">
+							<div class="card-body">
+								<h3 class="mb-3">Change password</h3>
+								
+								<form th:action="@{/user/change-password}" 
+								      th:object="${passwords}"
+									  method="post">
+									
+									<!--new password-->
+									<div class="form-group">
+										<input name="oldPassword" 
+										       type="password" 
+										       class="form-control" 
+										       th:classappend="${#fields.hasErrors('oldPassword') ? 'is-invalid' : ''}" 
+										       placeholder="Enter old password" />
+										
+										 <div th:each="e : ${#fields.errors('oldPassword')}" 
+													id="invalidCheck3Feedback" 
+													class="invalid-feedback"
+													th:utext="${e}">
+														
+										 </div>
+									</div>
+									
+									<!--old password-->
+									<div class="form-group">
+										<input name="newPassword" 
+											   type="password" 
+											   class="form-control" 
+											   th:classappend="${#fields.hasErrors('newPassword') ? 'is-invalid' : ''}" 
+											   placeholder="Enter new password" />
+										
+										 <div th:each="e : ${#fields.errors('newPassword')}" 
+													id="invalidCheck3Feedback" 
+													class="invalid-feedback"
+													th:utext="${e}">
+														
+										 </div>
+									</div>
+									
+									<!--button-->
+									<div class="container text-center">
+										<button type="submit" class="btn btn-success">Change</button>
+										<button type="reset" class="btn btn-warning">Reset</button>
+									</div>
+									
+								</form>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			
+			<script>
+				$(document).ready(() => {
+				 $(".item").removeClass("active");
+				 $("#settings-link").addClass("active");	
+				});
+			</script>
+			
+		</section>
+	</body>
+	
+</html>
+

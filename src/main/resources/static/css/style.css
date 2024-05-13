@@ -1,0 +1,187 @@
+body{
+	background: #e2e2e2!important;
+}
+
+.bg-primary{
+	background: rgb(0, 128, 192) !important;
+}
+
+.banner{
+	width:100%;
+	height:93vh;
+	background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url(../img/banner.avif);
+	background-size:cover;
+	color:white;
+}
+
+.my-card{
+	padding: 20px;
+	background: rgba(255,255,255,0.04);
+	box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+	color:rgb(255, 255, 255)
+}
+
+.bg-img{
+	background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url(../img/signup_img.webp);
+	background-size:cover;
+	object-fit: contain;
+	background-position: center;
+}
+
+.button1{
+	border-radius: 50px;
+}
+
+.submit-button{
+	background-color: rgb(128, 0, 128) !important;
+	padding:6px;
+	color:white;
+	}
+
+.reset-button{
+	background-color: brown !important;
+	padding:6px;
+	color:white;
+
+}
+
+.login-img{
+	width:100%;
+	height:93vh;
+	background:url(../img/login.jpeg) ;
+	background-size:cover;
+	object-fit: contain;
+	background-position: center;
+	
+}
+
+.login-my-card{
+	padding: 100px;
+	background: rgba(255,255,255,0.04);
+	box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+	color:rgb(255, 255, 255)
+}
+
+.text-h1{
+	font-size: 40px;
+	border-bottom: 5px solid purple;
+	padding: 13px 0;
+}
+
+.login-button{
+	background-color: purple !important;
+	padding:6px;
+	color:white;
+	
+}
+
+
+
+/*sidebar style*/
+
+.sidebar{
+	width: 18%;
+	background: white;
+	height: 100%;
+	position: fixed;
+	padding-top: 45px;
+	z-index :99999999999999999999999999999999;
+}
+
+.sidebar a{
+	display: block;
+	width: 100%;
+	padding: 10px 25px;
+	text-decoration: none;
+	color: grey;
+}
+
+.sidebar a:hover{
+	background:#e2e2e2 ;
+}
+
+.sidebar .divider{
+	height: .5px;
+	width: 100%;
+	background: #e2e2e2;
+	margin-top: 10px;
+}
+
+.content{
+	margin-left: 20%;
+}
+
+.sidebar .crossBtn{
+	position: absolute;
+	top: 0;
+	right: 35px;
+	font-size:36px;
+	cursor: pointer;
+}
+
+
+
+
+@media only screen and (max-width: 600px){
+	
+	.sidebar{
+	display: none;	
+	width: 80% !important;
+	background: white;
+	height: 100vh;
+	position: fixed;
+	padding-top: 20px;
+}
+
+.content{
+	margin-left: 0% !important;
+}
+
+
+
+}
+
+
+.profile_picture{
+	width: 30px;
+	height: 30px;
+	object-fit: cover;
+	border-radius: 50%;
+	border:1px solid black;
+}
+
+.contact_profile_picture{
+	width: 30px;
+	height: 30px;
+	object-fit: cover;
+}
+
+/*search result*/
+
+.search-container{
+	position: relative;
+}
+
+.search-result{
+	position: absolute;
+	background: white;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid gray;
+	display: none;
+}
+
+.active{
+	background: rgb(0, 128, 192) !important;
+	color: white !important;
+}
+
+
+
+
+
+
+
+
+
+
