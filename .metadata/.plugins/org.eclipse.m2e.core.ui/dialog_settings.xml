@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\SAMRDAWK\Documents\Spring boot project\ContactManager"/>
 			<item value="C:\Users\SAMRDAWK\Documents\java project\smartcontactmanager"/>
 		</list>
 		<list key="projectNameTemplate">
